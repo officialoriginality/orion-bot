@@ -5,21 +5,20 @@
 <meta charset="UTF-8">
 <title>Orion — Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  
+
 <style>
   :root {
-    --blue: #5865f2;
-    --blue-dark: #4752c4;
-    --bg: #080b14;
-    --card: #111827;
-    --card-light: #151d2e;
-    --border: #202b44;
-    --text: #f1f5f9;
-    --muted: #9ca3af;
-    --description: #cbd5e1;
+    --blue: #4f7cff;
+    --blue-light: #7ea2ff;
+    --bg: #05070c;
+    --card: #0d121d;
+    --border: #1b2638;
+    --border-light: #26344d;
+    --text: #f5f7fb;
+    --muted: #8d99aa;
     --white: #ffffff;
+    --body-text: #c2cad7;
   }
 
   * {
@@ -32,23 +31,25 @@
 
   body {
     margin: 0;
-    padding: 40px 20px 80px;
+    padding: 36px 20px 70px;
+
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
       Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+
+    line-height: 1.7;
     color: var(--text);
 
     background:
       radial-gradient(
-        circle at top,
-        rgba(88, 101, 242, 0.16),
-        transparent 40%
+        circle at 50% -10%,
+        rgba(79, 124, 255, 0.15),
+        transparent 42%
       ),
       linear-gradient(
-        135deg,
-        #080b14 0%,
-        #0b1020 50%,
-        #070a12 100%
+        145deg,
+        #05070c 0%,
+        #080c14 50%,
+        #05070c 100%
       );
   }
 
@@ -59,72 +60,181 @@
   }
 
   .card {
-    background: rgba(17, 24, 39, 0.94);
+    padding: 42px 46px;
+
+    background: rgba(13, 18, 29, 0.97);
     border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 48px 44px;
+    border-radius: 18px;
 
     box-shadow:
-      0 20px 60px rgba(0, 0, 0, 0.45),
-      0 0 40px rgba(88, 101, 242, 0.06);
+      0 24px 70px rgba(0, 0, 0, 0.45);
   }
 
-  /* Header */
-
-  .header {
+  .top {
     text-align: center;
-    padding-bottom: 32px;
-    margin-bottom: 32px;
+    padding-bottom: 28px;
+    margin-bottom: 20px;
+
     border-bottom: 1px solid var(--border);
   }
 
   .logo {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 18px;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 17px;
-    background: var(--blue);
+    border-radius: 14px;
+
+    background:
+      linear-gradient(
+        145deg,
+        #5d87ff,
+        #3e68d9
+      );
+
     color: var(--white);
 
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     font-weight: 700;
 
     box-shadow:
-      0 8px 25px rgba(88, 101, 242, 0.35);
+      0 10px 28px rgba(79, 124, 255, 0.16);
   }
 
   h1 {
-    margin: 0 0 8px;
+    margin: 0 0 7px;
+
     color: var(--white);
-    font-size: 2.2rem;
-    letter-spacing: -0.02em;
+    font-size: 2.15rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
   }
 
   .subtitle {
     margin: 0;
+
     color: var(--muted);
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  /* Command list */
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 
-  .commands {
+    margin-bottom: 34px;
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  .navigation a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 14px;
+
+    border: 1px solid var(--border-light);
+    border-radius: 9px;
+
+    background: #0a101c;
+
+    color: #b9c7e8;
+
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .navigation a:hover {
+    background: #111c32;
+    border-color: #3b5fae;
+    color: var(--white);
+    transform: translateY(-1px);
+  }
+
+  .navigation a.active {
+    background:
+      linear-gradient(
+        145deg,
+        #4f7cff,
+        #4269d7
+      );
+
+    border-color: #5f88ff;
+    color: var(--white);
+
+    box-shadow:
+      0 6px 18px rgba(79, 124, 255, 0.16);
+  }
+
+  .intro {
+    margin-bottom: 30px;
+    padding: 18px 20px;
+
+    background: #09101c;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+
+    border-radius: 10px;
+  }
+
+  .intro p {
+    margin: 0;
+  }
+
+  h2 {
+    margin-top: 2.3em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.45em;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--blue-light);
+    font-size: 1.25rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    color: var(--body-text);
+  }
+
+  .command-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
   }
 
   .command {
-    padding: 18px 20px;
+    padding: 15px 17px;
 
-    background: rgba(21, 29, 46, 0.75);
+    background: #0a101c;
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 10px;
 
     transition:
       border-color 0.2s ease,
@@ -133,42 +243,22 @@
   }
 
   .command:hover {
-    background: rgba(24, 33, 58, 0.95);
-    border-color: rgba(88, 101, 242, 0.55);
-    transform: translateY(-1px);
+    background: #0d1626;
+    border-color: #30456b;
+    transform: translateX(2px);
   }
 
   .command-name {
-    margin-bottom: 8px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--white);
-  }
-
-  .command-name::before {
-    content: "";
-    width: 5px;
-    height: 20px;
-    border-radius: 4px;
-    background: var(--blue);
-    box-shadow: 0 0 10px rgba(88, 101, 242, 0.35);
-  }
-
-  .syntax {
     display: inline-block;
-    margin-bottom: 7px;
-    padding: 5px 9px;
 
+    margin-bottom: 5px;
+    padding: 3px 8px;
+
+    background: #070b13;
+    border: 1px solid #1d2a40;
     border-radius: 6px;
-    border: 1px solid #273452;
-    background: #080d18;
 
-    color: #a5b4fc;
+    color: #9eb6ff;
 
     font-family:
       "SFMono-Regular",
@@ -177,95 +267,69 @@
       monospace;
 
     font-size: 0.88rem;
-    word-break: break-word;
-  }
-
-  .description {
-    margin: 0;
-    color: var(--description);
-    font-size: 0.95rem;
-  }
-
-  /* Navigation buttons */
-
-  .navigation {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 34px;
-    padding-top: 28px;
-    border-top: 1px solid var(--border);
-  }
-
-  .navigation a {
-    display: inline-block;
-    padding: 11px 17px;
-
-    border-radius: 9px;
-    background: #18213a;
-    border: 1px solid #273452;
-
-    color: #aab5ff;
     font-weight: 600;
-    text-decoration: none;
-
-    transition: 0.2s ease;
   }
 
-  .navigation a:hover {
-    background: var(--blue);
-    border-color: var(--blue);
-    color: white;
+  .command-description {
+    display: block;
 
-    transform: translateY(-1px);
-
-    box-shadow:
-      0 8px 20px rgba(88, 101, 242, 0.3);
+    color: var(--body-text);
+    font-size: 0.94rem;
   }
 
-  /* Footer */
+  .command-description strong {
+    color: var(--white);
+  }
+
+  .note {
+    margin-top: 30px;
+    padding: 16px 18px;
+
+    background: #090f1a;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  strong {
+    color: var(--white);
+  }
 
   .footer {
     text-align: center;
     margin-top: 24px;
-    color: #64748b;
-    font-size: 0.85rem;
-  }
 
-  /* Mobile */
+    color: #5f6b7c;
+    font-size: 0.82rem;
+  }
 
   @media (max-width: 600px) {
     body {
-      padding: 20px 12px 50px;
+      padding: 18px 12px 50px;
     }
 
     .card {
-      padding: 34px 20px;
+      padding: 32px 22px;
       border-radius: 16px;
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.75rem;
     }
 
-    .command {
-      padding: 16px;
-    }
-
-    .command-name {
-      font-size: 1rem;
-    }
-
-    .syntax {
-      font-size: 0.82rem;
+    h2 {
+      font-size: 1.15rem;
     }
 
     .navigation {
-      flex-direction: column;
+      gap: 7px;
     }
 
     .navigation a {
-      text-align: center;
+      padding: 8px 11px;
+      font-size: 0.82rem;
     }
   }
 </style>
@@ -278,273 +342,153 @@
 
   <main class="card">
 
-<header class="header">
+```
+<div class="top">
   <div class="logo">O</div>
 
   <h1>Orion Documentation</h1>
 
   <p class="subtitle">
-    Complete list of Orion moderation commands and what they do.
+    Commands and moderation tools available in Orion.
   </p>
+</div>
 
-  <nav class="navigation">
+<nav class="navigation">
   <a href="./index.html">← Back to Orion</a>
+  <a href="./documentation.html" class="active">Documentation</a>
   <a href="./privacy.html">Privacy Policy</a>
   <a href="./terms.html">Terms of Service</a>
-  </nav>
-</header>
+</nav>
 
-<section class="commands">
+<div class="intro">
+  <p>
+    Below is a list of commands currently available in Orion.
+    Commands use the <strong>?</strong> prefix.
+  </p>
+</div>
 
-  <div class="command">
-    <div class="command-name">Ping</div>
-    <div class="syntax">?ping</div>
-    <p class="description">
+<h2>General</h2>
+
+<ul class="command-list">
+
+  <li class="command">
+    <span class="command-name">?ping</span>
+    <span class="command-description">
       Checks if the bot is online.
-    </p>
-  </div>
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Hi</div>
-    <div class="syntax">?hi</div>
-    <p class="description">
+  <li class="command">
+    <span class="command-name">?hi</span>
+    <span class="command-description">
       Orion says hi to you.
-    </p>
-  </div>
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Kick</div>
-    <div class="syntax">?kick @member [reason]</div>
-    <p class="description">
+</ul>
+
+<h2>Moderation</h2>
+
+<ul class="command-list">
+
+  <li class="command">
+    <span class="command-name">?kick @member [reason]</span>
+    <span class="command-description">
       Kicks a member from the server.
-    </p>
-  </div>
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Ban</div>
-    <div class="syntax">?ban @member [reason]</div>
-    <p class="description">
+  <li class="command">
+    <span class="command-name">?ban @member [reason]</span>
+    <span class="command-description">
       Bans a member from the server.
-    </p>
-  </div>
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Softban</div>
-    <div class="syntax">?softban @member [days] [reason]</div>
-    <p class="description">
-      Bans then immediately unbans a member to purge their recent messages.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?timeout @member [duration] [reason]</span>
+    <span class="command-description">
+      Temporarily prevents a member from communicating in the server.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Unban</div>
-    <div class="syntax">?unban user_id</div>
-    <p class="description">
-      Unbans a user by their ID.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?warn @member [reason]</span>
+    <span class="command-description">
+      Gives a member a warning and stores the warning in their history.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Mute</div>
-    <div class="syntax">?mute @member [reason]</div>
-    <p class="description">
-      Mutes a member using a persistent Muted role.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?warnings @member</span>
+    <span class="command-description">
+      Displays the warning history for a member.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Unmute</div>
-    <div class="syntax">?unmute @member</div>
-    <p class="description">
-      Removes the Muted role from a member.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?clearwarnings @member</span>
+    <span class="command-description">
+      Clears the stored warnings for a member.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Timeout</div>
-    <div class="syntax">?timeout @member minutes [reason]</div>
-    <p class="description">
-      Times out a member for a number of minutes.
-    </p>
-  </div>
+</ul>
 
-  <div class="command">
-    <div class="command-name">Untimeout</div>
-    <div class="syntax">?untimeout @member</div>
-    <p class="description">
-      Removes an active timeout from a member.
-    </p>
-  </div>
+<h2>Server Management</h2>
 
-  <div class="command">
-    <div class="command-name">Warn</div>
-    <div class="syntax">?warn @member [reason]</div>
-    <p class="description">
-      Warns a member and logs it. Auto-timeouts/kicks at set thresholds.
-    </p>
-  </div>
+<ul class="command-list">
 
-  <div class="command">
-    <div class="command-name">Warnings</div>
-    <div class="syntax">?warnings @member</div>
-    <p class="description">
-      Shows all warnings a member has.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?lock</span>
+    <span class="command-description">
+      Locks the current channel so regular members cannot send messages.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Clear Warnings</div>
-    <div class="syntax">?clearwarnings @member</div>
-    <p class="description">
-      Clears all warnings for a member.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?unlock</span>
+    <span class="command-description">
+      Unlocks the current channel.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Mod Logs</div>
-    <div class="syntax">?modlogs @member</div>
-    <p class="description">
-      Shows a member's full moderation history.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?slowmode [seconds]</span>
+    <span class="command-description">
+      Sets slowmode for the current channel.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Case</div>
-    <div class="syntax">?case id</div>
-    <p class="description">
-      Shows details for a specific moderation case.
-    </p>
-  </div>
+</ul>
 
-  <div class="command">
-    <div class="command-name">Delete Case</div>
-    <div class="syntax">?delcase id</div>
-    <p class="description">
-      Deletes a moderation case.
-    </p>
-  </div>
+<h2>Roles</h2>
 
-  <div class="command">
-    <div class="command-name">Note</div>
-    <div class="syntax">?note @member text</div>
-    <p class="description">
-      Adds a private mod note to a member.
-    </p>
-  </div>
+<ul class="command-list">
 
-  <div class="command">
-    <div class="command-name">Notes</div>
-    <div class="syntax">?notes @member</div>
-    <p class="description">
-      Shows a member's mod notes.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?addrole @member [role]</span>
+    <span class="command-description">
+      Adds a specified role to a member.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Clear</div>
-    <div class="syntax">?clear amount [@member] [keyword]</div>
-    <p class="description">
-      Deletes recent messages, optionally filtered by member or keyword.
-    </p>
-  </div>
+  <li class="command">
+    <span class="command-name">?removerole @member [role]</span>
+    <span class="command-description">
+      Removes a specified role from a member.
+    </span>
+  </li>
 
-  <div class="command">
-    <div class="command-name">Role</div>
-    <div class="syntax">?role @member partial role name</div>
-    <p class="description">
-      Toggles a role on or off for a member. You can type part of the role's name.
-    </p>
-  </div>
+</ul>
 
-  <div class="command">
-    <div class="command-name">Lock</div>
-    <div class="syntax">?lock [channel|all]</div>
-    <p class="description">
-      Locks a channel, or every channel in the current category if you say "all".
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Unlock</div>
-    <div class="syntax">?unlock [channel|all]</div>
-    <p class="description">
-      Unlocks a channel, or every channel in the current category if you say "all".
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Lock Status</div>
-    <div class="syntax">?lockstatus</div>
-    <p class="description">
-      Shows which channels are currently locked.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Lockdown</div>
-    <div class="syntax">?lockdown</div>
-    <p class="description">
-      Locks every text channel in the server.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Unlockdown</div>
-    <div class="syntax">?unlockdown</div>
-    <p class="description">
-      Unlocks every text channel in the server.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Slowmode</div>
-    <div class="syntax">?slowmode on|off</div>
-    <p class="description">
-      Turns 5 second slowmode on or off in the current channel.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Filter Invites</div>
-    <div class="syntax">?filterinvites on|off</div>
-    <p class="description">
-      Toggles auto-deletion of Discord invite links.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Block Domain</div>
-    <div class="syntax">?blockdomain add|remove|list [domain]</div>
-    <p class="description">
-      Manages a list of blocked domains that get auto-deleted.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Raid Mode</div>
-    <div class="syntax">?raidmode on|off</div>
-    <p class="description">
-      Toggles automatic server lockdown when a join-raid is detected.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Set Warn Threshold</div>
-    <div class="syntax">?setwarnthreshold timeout|kick count</div>
-    <p class="description">
-      Sets how many warnings trigger an automatic timeout or kick.
-    </p>
-  </div>
-
-  <div class="command">
-    <div class="command-name">Commands / Cmds</div>
-    <div class="syntax">?commands</div>
-    <p class="description">
-      DMs you this list of commands.
-    </p>
-  </div>
-
-</section>
+<div class="note">
+  <strong>Note:</strong>
+  Some commands require specific Discord permissions.
+  Orion will only perform moderation actions that its bot account
+  has permission to perform.
+</div>
+```
 
   </main>
 
