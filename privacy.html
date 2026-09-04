@@ -1,447 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Orion — Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="icon" href="./orion-icon.png" type="image/png">
-
-  <style>
-    :root {
-      --blue: #3158d8;
-      --blue-dark: #2447bd;
-      --blue-light: #5475e8;
-
-      --background: #f4f7ff;
-      --white: #ffffff;
-
-      --text: #101828;
-      --muted: #667085;
-
-      --border: #d8e1f5;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      padding: 0 20px 70px;
-
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Helvetica,
-        Arial,
-        sans-serif;
-
-      line-height: 1.7;
-
-      color: var(--text);
-
-      background:
-        radial-gradient(
-          circle at top left,
-          rgba(49, 88, 216, 0.10),
-          transparent 35%
-        ),
-        radial-gradient(
-          circle at bottom right,
-          rgba(84, 117, 232, 0.08),
-          transparent 35%
-        ),
-        linear-gradient(
-          135deg,
-          #f7f9ff 0%,
-          #eef3ff 50%,
-          #f4f7ff 100%
-        );
-    }
-
-    .navigation {
-      width: 100%;
-
-      min-height: 70px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      gap: 8px;
-
-      padding: 12px 20px;
-
-      background: rgba(255, 255, 255, 0.94);
-
-      border-bottom: 1px solid var(--border);
-    }
-
-    .navigation a {
-      padding: 8px 14px;
-
-      border-radius: 8px;
-
-      color: #475467;
-
-      font-size: 0.9rem;
-      font-weight: 600;
-
-      text-decoration: none;
-
-      transition: 0.18s ease;
-    }
-
-    .navigation a:hover {
-      background: #f0f4ff;
-      color: var(--blue);
-    }
-
-    .navigation a.active {
-      background: var(--blue);
-      color: var(--white);
-    }
-
-    .container {
-      width: 100%;
-      max-width: 900px;
-
-      margin: 42px auto 0;
-    }
-
-    .card {
-      padding: 48px;
-
-      background: var(--white);
-
-      border: 1px solid var(--border);
-      border-radius: 20px;
-
-      box-shadow:
-        0 18px 45px rgba(39, 67, 130, 0.08);
-    }
-
-    .top {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      padding-bottom: 28px;
-      margin-bottom: 32px;
-
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo {
-      width: 68px;
-      height: 68px;
-
-      object-fit: contain;
-
-      flex-shrink: 0;
-    }
-
-    h1 {
-      margin: 0 0 5px;
-
-      color: var(--text);
-
-      font-size: 2rem;
-      font-weight: 750;
-
-      letter-spacing: -0.03em;
-    }
-
-    .updated {
-      margin: 0;
-
-      color: var(--muted);
-
-      font-size: 0.9rem;
-    }
-
-    h2 {
-      margin-top: 2.4em;
-      margin-bottom: 0.8em;
-
-      padding-bottom: 0.45em;
-
-      border-bottom: 1px solid var(--border);
-
-      color: var(--blue);
-
-      font-size: 1.25rem;
-    }
-
-    h2:first-of-type {
-      margin-top: 0;
-    }
-
-    p {
-      color: #475467;
-    }
-
-    li {
-      color: #475467;
-      margin-bottom: 8px;
-    }
-
-    strong {
-      color: var(--text);
-    }
-
-    code {
-      padding: 3px 7px;
-
-      border-radius: 6px;
-
-      background: #f1f4fb;
-
-      border: 1px solid var(--border);
-
-      color: var(--blue);
-
-      font-family:
-        "SFMono-Regular",
-        Consolas,
-        "Liberation Mono",
-        monospace;
-
-      font-size: 0.9em;
-    }
-
-    .footer {
-      text-align: center;
-
-      margin-top: 24px;
-
-      color: #98a2b3;
-
-      font-size: 0.85rem;
-    }
-
-    @media (max-width: 650px) {
-      body {
-        padding: 0 12px 50px;
-      }
-
-      .navigation {
-        flex-wrap: wrap;
-        padding: 12px 8px;
-      }
-
-      .navigation a {
-        font-size: 0.82rem;
-        padding: 7px 9px;
-      }
-
-      .container {
-        margin-top: 20px;
-      }
-
-      .card {
-        padding: 32px 22px;
-      }
-
-      .top {
-        align-items: flex-start;
-      }
-
-      .logo {
-        width: 54px;
-        height: 54px;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Orion — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+<style>
+:root {
+  --blue: #3155d9;
+  --blue-hover: #2748c5;
+  --blue-soft: #eef3ff;
+  --blue-border: #d5dff7;
+
+  --background: #f3f6fd;
+  --background-top: #edf2ff;
+
+  --white: #ffffff;
+  --text: #101828;
+  --text-secondary: #52627a;
+  --border: #dbe3f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      #e4ebff 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      var(--background-top) 0%,
+      var(--background) 100%
+    );
+}
+
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.navigation {
+  width: 100%;
+  max-width: 1180px;
+  min-height: 70px;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links a {
+  padding: 9px 14px;
+  border-radius: 8px;
+
+  color: #40506b;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+  background: var(--blue-soft);
+}
+
+.nav-links a.active {
+  background: var(--blue);
+  color: white;
+}
+
+.page {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 24px 70px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 52px 48px;
+
+  box-shadow:
+    0 18px 45px rgba(39, 65, 120, 0.08);
+}
+
+.page-header {
+  text-align: center;
+
+  padding-bottom: 34px;
+  margin-bottom: 38px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+
+  object-fit: contain;
+}
+
+h1 {
+  margin: 0 0 10px;
+
+  color: var(--text);
+  font-size: 2.2rem;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+}
+
+.updated {
+  margin: 0;
+
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+h2 {
+  margin: 40px 0 14px;
+
+  padding-bottom: 10px;
+
+  color: var(--blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  border-bottom: 1px solid var(--blue-border);
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+li {
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+}
+
+strong {
+  color: var(--text);
+}
+
+.command {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 28px;
+
+  color: #8290a8;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 700px) {
+  .navigation {
+    min-height: auto;
+    padding: 14px 18px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page {
+    padding: 20px 12px 50px;
+  }
+
+  .card {
+    padding: 38px 24px;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+</style>
 </head>
 
 <body>
 
+<header class="site-header">
   <nav class="navigation">
-    <a href="./index.html">← Back to Orion</a>
-    <a href="./documentation.html">Documentation</a>
-    <a href="./privacy.html" class="active">Privacy Policy</a>
-    <a href="./terms.html">Terms of Service</a>
+
+    <a class="brand" href="./index.html">
+      <img src="./favicon.ico" alt="Orion">
+      <span>Orion</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="./index.html">← Back to Orion</a>
+      <a href="./documentation.html">Documentation</a>
+      <a href="./privacy.html" class="active">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+    </div>
+
   </nav>
+</header>
 
-  <div class="container">
+<main class="page">
 
-    <main class="card">
+  <section class="card">
 
-      <div class="top">
-        <img
-          src="./orion-icon.png"
-          alt="Orion"
-          class="logo"
-        >
+    <div class="page-header">
 
-        <div>
-          <h1>Orion Privacy Policy</h1>
+      <img
+        class="logo"
+        src="./favicon.ico"
+        alt="Orion logo"
+      >
 
-          <p class="updated">
-            Last updated: September 3, 2026
-          </p>
-        </div>
-      </div>
+      <h1>Privacy Policy</h1>
 
-      <p>
-        This Privacy Policy explains what information Orion collects,
-        how it is used, and your rights regarding that information.
+      <p class="updated">
+        Last updated: September 3, 2026
       </p>
 
-      <h2>1. Information We Collect</h2>
+    </div>
 
-      <p>
-        When you use Orion in a server, it may collect and store
-        the following:
-      </p>
+    <p>
+      This Privacy Policy explains what information Orion collects,
+      how it is used, and your rights regarding that information.
+    </p>
 
-      <ul>
-        <li>
-          <strong>Discord User IDs</strong> — to identify who a
-          moderation action (kick, ban, timeout, warning, role change,
-          etc.) was applied to and who applied it.
-        </li>
+    <h2>1. Information We Collect</h2>
 
-        <li>
-          <strong>Warning records</strong> — the reason given for a
-          warning and the moderator who issued it, stored per server
-          and per user, so warning history can be reviewed later.
-        </li>
+    <p>
+      When you use Orion in a server, it may collect and store the following:
+    </p>
 
-        <li>
-          <strong>Server (Guild) IDs</strong> — to keep data separated
-          between different servers Orion is used in.
-        </li>
-      </ul>
+    <ul>
+      <li>
+        <strong>Discord User IDs</strong> — to identify who a moderation
+        action was applied to and who applied it.
+      </li>
 
-      <p>
-        Orion does <strong>not</strong> permanently store the content
-        of your regular messages. It only reads message content as
-        required to process commands (e.g.
-        <code>?warn @user reason</code>) and does not log or retain
-        chat messages.
-      </p>
+      <li>
+        <strong>Warning records</strong> — the reason given for a warning
+        and the moderator who issued it, stored per server and per user.
+      </li>
 
-      <h2>2. How We Use Information</h2>
+      <li>
+        <strong>Server (Guild) IDs</strong> — to keep data separated
+        between different servers Orion is used in.
+      </li>
+    </ul>
 
-      <p>
-        Collected information is used only to:
-      </p>
+    <p>
+      Orion does <strong>not</strong> permanently store the content of
+      your regular messages. It only reads message content as required
+      to process commands such as <strong>?warn @user reason</strong>
+      and does not log or retain chat messages.
+    </p>
 
-      <ul>
-        <li>
-          Carry out moderation actions requested by server staff
-          (kicks, bans, timeouts, warnings, role toggles,
-          channel locks, etc.)
-        </li>
+    <h2>2. How We Use Information</h2>
 
-        <li>
-          Maintain a warning history so moderators can review
-          a member's past warnings
-        </li>
+    <p>Collected information is used only to:</p>
 
-        <li>
-          Post moderation logs to a designated log channel within
-          the same server, if one is configured
-        </li>
-      </ul>
+    <ul>
+      <li>
+        Carry out moderation actions requested by server staff.
+      </li>
 
-      <h2>3. Data Sharing</h2>
+      <li>
+        Maintain a warning history so moderators can review a member's
+        past warnings.
+      </li>
 
-      <p>
-        We do not sell, rent, or share your information with third
-        parties. Data collected by Orion is only accessible to:
-      </p>
+      <li>
+        Post moderation logs to a designated log channel within the same
+        server, if one is configured.
+      </li>
+    </ul>
 
-      <ul>
-        <li>Orion's operator</li>
+    <h2>3. Data Sharing</h2>
 
-        <li>
-          Server moderators/admins, through Orion's own commands
-          (e.g. <code>?warnings @member</code>)
-        </li>
-      </ul>
+    <p>
+      We do not sell, rent, or share your information with third parties.
+      Data collected by Orion is only accessible to:
+    </p>
 
-      <h2>4. Data Storage &amp; Retention</h2>
+    <ul>
+      <li>Orion's operator</li>
 
-      <p>
-        Warning data is stored in a local data file associated with
-        Orion and is retained until:
-      </p>
+      <li>
+        Server moderators/admins through Orion's own commands.
+      </li>
+    </ul>
 
-      <ul>
-        <li>
-          It is cleared by a server moderator using Orion's commands
-          (e.g. <code>?clearwarnings</code>), or
-        </li>
+    <h2>4. Data Storage &amp; Retention</h2>
 
-        <li>
-          Orion is removed from the server, or
-        </li>
+    <p>
+      Warning data is stored in a local data file associated with Orion
+      and is retained until:
+    </p>
 
-        <li>
-          You request deletion (see Section 6)
-        </li>
-      </ul>
+    <ul>
+      <li>
+        It is cleared by a server moderator using Orion's commands.
+      </li>
 
-      <h2>5. Data Security</h2>
+      <li>
+        Orion is removed from the server.
+      </li>
 
-      <p>
-        We take reasonable steps to protect stored data, including
-        restricting access to Orion's hosting environment and
-        credentials. However, no method of storage or transmission
-        is 100% secure.
-      </p>
+      <li>
+        You request deletion.
+      </li>
+    </ul>
 
-      <h2>6. Your Rights</h2>
+    <h2>5. Data Security</h2>
 
-      <p>
-        You may request access to, or deletion of, any personal data
-        associated with you (such as warning records) by contacting
-        Orion's operator directly on Discord.
-      </p>
+    <p>
+      We take reasonable steps to protect stored data, including restricting
+      access to Orion's hosting environment and credentials. However, no
+      method of storage or transmission is 100% secure.
+    </p>
 
-      <h2>7. Children's Privacy</h2>
+    <h2>6. Your Rights</h2>
 
-      <p>
-        Orion is not intended for use by anyone under the age required
-        by Discord's own Terms of Service. We do not knowingly collect
-        data from underage users beyond what Discord itself provides.
-      </p>
+    <p>
+      You may request access to, or deletion of, any personal data associated
+      with you, such as warning records, by contacting Orion's operator
+      directly on Discord.
+    </p>
 
-      <h2>8. Changes to This Policy</h2>
+    <h2>7. Children's Privacy</h2>
 
-      <p>
-        This Privacy Policy may be updated from time to time.
-        Continued use of Orion after changes are posted constitutes
-        acceptance of the updated policy.
-      </p>
+    <p>
+      Orion is not intended for use by anyone under the age required by
+      Discord's own Terms of Service. We do not knowingly collect data
+      from underage users beyond what Discord itself provides.
+    </p>
 
-      <h2>9. Contact</h2>
+    <h2>8. Changes to This Policy</h2>
 
-      <p>
-        If you have questions about this Privacy Policy, please
-        contact Orion's operator on Discord.
-      </p>
+    <p>
+      This Privacy Policy may be updated from time to time. Continued use
+      of Orion after changes are posted constitutes acceptance of the
+      updated policy.
+    </p>
 
-    </main>
+    <h2>9. Contact</h2>
+
+    <p>
+      If you have questions about this Privacy Policy, please contact
+      Orion's operator on Discord.
+    </p>
 
     <div class="footer">
       © 2026 Orion
     </div>
 
-  </div>
+  </section>
+
+</main>
 
 </body>
 </html>
