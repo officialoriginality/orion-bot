@@ -1,407 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Orion — Terms of Service</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Orion — Terms of Service</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<style>
+:root {
+  --blue: #3156d8;
+  --blue-light: #4167e8;
+  --blue-dark: #2345b8;
+  --blue-deep: #18398f;
+  --white: #ffffff;
+  --white-soft: #f7f9ff;
+  --navy: #10204d;
+  --text: #263861;
+  --muted: #6f7fa3;
+  --line: #d6def2;
+  --shadow: 0 24px 60px rgba(20, 49, 130, 0.20);
+}
 
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+* {
+  box-sizing: border-box;
+}
 
-  <style>
-    :root {
-      --blue: #3156d9;
-      --blue-dark: #2445b8;
-      --blue-light: #4b6be3;
-      --blue-soft: #eef2ff;
+html {
+  scroll-behavior: smooth;
+}
 
-      --background: #f4f7ff;
-      --background-2: #eaf0ff;
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(92, 126, 239, 0.95), transparent 34%),
+    radial-gradient(circle at 90% 100%, rgba(35, 69, 184, 0.75), transparent 38%),
+    linear-gradient(135deg, #2345b8 0%, #3156d8 48%, #4167e8 100%);
+  background-attachment: fixed;
+}
 
-      --white: #ffffff;
-      --text: #101a35;
-      --text-light: #53617f;
-      --border: #d8e0f4;
-    }
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(35, 69, 184, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
 
-    * {
-      box-sizing: border-box;
-    }
+.header-inner {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 72px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
 
-    body {
-      margin: 0;
+.brand img {
+  width: 38px;
+  height: 38px;
+  display: block;
+  object-fit: contain;
+}
 
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Helvetica, Arial, sans-serif;
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 7px;
+}
 
-      line-height: 1.7;
-      color: var(--text);
+.navigation a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 14px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
 
-      background:
-        radial-gradient(
-          circle at top left,
-          rgba(49, 86, 217, 0.16),
-          transparent 35%
-        ),
-        radial-gradient(
-          circle at bottom right,
-          rgba(75, 107, 227, 0.12),
-          transparent 35%
-        ),
-        linear-gradient(
-          135deg,
-          var(--background) 0%,
-          var(--background-2) 100%
-        );
-    }
+.navigation a:hover,
+.navigation a.active {
+  color: var(--blue-dark);
+  background: var(--white);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+}
 
-    .site-header {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.92);
-      border-bottom: 1px solid var(--border);
-    }
+.page {
+  width: min(1080px, calc(100% - 40px));
+  margin: 46px auto 70px;
+}
 
-    .navigation {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 14px 28px;
+.card {
+  background: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
+.content-card {
+  padding: 54px 58px 60px;
+}
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+.hero {
+  text-align: center;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--line);
+}
 
-      color: var(--text);
-      font-size: 1.05rem;
-      font-weight: 800;
-      text-decoration: none;
-    }
+.hero-logo {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 20px;
+  display: block;
+  object-fit: contain;
+}
 
-    .brand img {
-      width: 34px;
-      height: 34px;
-      object-fit: contain;
-    }
+.hero h1 {
+  margin: 0 0 8px;
+  color: #0b1a43;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
 
-    .nav-links a {
-      padding: 9px 14px;
-      border-radius: 8px;
+.hero .updated {
+  font-size: 0.9rem;
+}
 
-      color: #405073;
-      font-size: 0.9rem;
-      font-weight: 650;
-      text-decoration: none;
+h2 {
+  margin: 2.25em 0 0.7em;
+  padding-bottom: 0.45em;
+  color: var(--blue);
+  border-bottom: 1px solid var(--line);
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
 
-      transition: 0.2s ease;
-    }
+h2:first-of-type {
+  margin-top: 0;
+}
 
-    .nav-links a:hover {
-      color: var(--blue);
-      background: var(--blue-soft);
-    }
+p,
+li {
+  color: var(--text);
+}
 
-    .nav-links a.active {
-      color: var(--white);
-      background: var(--blue);
-    }
+li {
+  margin-bottom: 8px;
+}
 
-    .page {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
+strong {
+  color: #0b1a43;
+}
 
-      padding: 32px 28px 70px;
-    }
+a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
 
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 22px;
+a:hover {
+  color: var(--blue-dark);
+  text-decoration: underline;
+}
 
-      padding: 58px 48px;
+.command {
+  color: #0b1a43;
+  font-weight: 800;
+}
 
-      box-shadow:
-        0 24px 60px rgba(35, 62, 125, 0.10);
-    }
+.command-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-    .top {
-      text-align: center;
+.command-list li {
+  position: relative;
+  padding: 13px 0 13px 22px;
+  margin: 0;
+  border-bottom: 1px solid #e7ebf6;
+}
 
-      padding-bottom: 34px;
-      margin-bottom: 36px;
+.command-list li::before {
+  content: "•";
+  position: absolute;
+  left: 2px;
+  color: var(--blue);
+  font-weight: 900;
+}
 
-      border-bottom: 1px solid var(--border);
-    }
+.footer {
+  width: min(1080px, calc(100% - 40px));
+  margin: -44px auto 34px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.85rem;
+}
 
-    .logo {
-      width: 82px;
-      height: 82px;
+.home-page {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 20px 70px;
+}
 
-      margin: 0 auto 20px;
+.home-card {
+  width: min(560px, 100%);
+  padding: 58px 48px 52px;
+  text-align: center;
+}
 
-      object-fit: contain;
-    }
+.home-card .hero {
+  border-bottom: 0;
+  padding-bottom: 28px;
+}
 
-    h1 {
-      margin: 0 0 10px;
+.home-card .hero-logo {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 22px;
+}
 
-      color: var(--text);
-      font-size: 2.35rem;
-      font-weight: 800;
-      letter-spacing: -0.035em;
-    }
+.home-card h1 {
+  font-size: clamp(2.3rem, 6vw, 3rem);
+}
 
-    .updated {
-      margin: 0;
+.home-card .subtitle {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
 
-      color: var(--text-light);
-      font-size: 0.92rem;
-    }
+.home-links {
+  display: grid;
+  gap: 12px;
+}
 
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 14px;
+.home-links a {
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 19px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  box-shadow: 0 8px 18px rgba(35, 69, 184, 0.16);
+  text-align: left;
+  transition: 0.2s ease;
+}
 
-      padding-bottom: 9px;
+.home-links a span:last-child {
+  font-size: 1.1rem;
+}
 
-      color: var(--blue);
-      font-size: 1.25rem;
-      font-weight: 800;
+.home-links a:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+  color: var(--white);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(35, 69, 184, 0.25);
+}
 
-      border-bottom: 1px solid var(--border);
-    }
+.home-footer {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 
-    h2:first-of-type {
-      margin-top: 0;
-    }
+@media (max-width: 700px) {
+  .header-inner {
+    width: min(100% - 24px, 1180px);
+    min-height: 66px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 0;
+  }
 
-    p {
-      color: var(--text-light);
-    }
+  .navigation {
+    justify-content: center;
+  }
 
-    li {
-      margin-bottom: 9px;
-      color: var(--text-light);
-    }
+  .navigation a {
+    min-height: 36px;
+    padding: 7px 10px;
+    font-size: 0.82rem;
+  }
 
-    strong {
-      color: var(--text);
-    }
+  .page {
+    width: min(100% - 24px, 1080px);
+    margin: 24px auto 54px;
+  }
 
-    a {
-      color: var(--blue);
-      font-weight: 700;
-      text-decoration: none;
-    }
+  .content-card {
+    padding: 38px 24px 44px;
+    border-radius: 17px;
+  }
 
-    a:hover {
-      color: var(--blue-dark);
-      text-decoration: underline;
-    }
+  .hero-logo {
+    width: 76px;
+    height: 76px;
+  }
 
-    .footer {
-      margin-top: 38px;
+  .footer {
+    width: calc(100% - 24px);
+    margin: -28px auto 24px;
+  }
 
-      text-align: center;
+  .home-page {
+    min-height: calc(100vh - 66px);
+    padding: 28px 12px 42px;
+  }
 
-      color: #7180a0;
-      font-size: 0.82rem;
-    }
+  .home-card {
+    padding: 42px 24px 38px;
+    border-radius: 17px;
+  }
 
-    @media (max-width: 700px) {
-      .navigation {
-        padding: 12px 16px;
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .page {
-        padding: 20px 12px 50px;
-      }
-
-      .card {
-        padding: 40px 24px;
-        border-radius: 18px;
-      }
-
-      h1 {
-        font-size: 1.9rem;
-      }
-
-      h2 {
-        font-size: 1.15rem;
-      }
-    }
-  </style>
+  .home-card .hero-logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+</style>
 </head>
-
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html">
+      <img src="./orion-icon.png" alt="Orion">
+      <span>Orion</span>
+    </a>
+
     <nav class="navigation">
-
-      <a class="brand" href="./index.html">
-        <img src="./orion.png" alt="Orion">
-        <span>Orion</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="./index.html">← Back to Orion</a>
-        <a href="./documentation.html">Documentation</a>
-        <a href="./privacy.html">Privacy Policy</a>
-        <a href="./terms.html" class="active">Terms of Service</a>
-      </div>
-
+      <a href="./documentation.html" class="">Documentation</a>
+      <a href="./privacy.html" class="">Privacy Policy</a>
+      <a href="./terms.html" class="active">Terms of Service</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main class="page">
 
-    <section class="card">
+<main class="page">
+  <article class="card content-card">
+    <div class="hero">
+      <img class="hero-logo" src="./orion-icon.png" alt="Orion logo">
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: September 3, 2026</p>
+    </div>
 
-      <div class="top">
+    <h2>1. Description of Service</h2>
+    <p>
+      Orion provides moderation-related tools for Discord servers, including but not
+      limited to kicking, banning, timing out, and warning members, managing roles,
+      locking/unlocking channels, and toggling slowmode.
+    </p>
 
-        <img
-          class="logo"
-          src="./orion.png"
-          alt="Orion logo"
-        >
+    <h2>2. Acceptable Use</h2>
+    <p>You agree to:</p>
+    <ul>
+      <li>Use Orion in compliance with <a href="https://discord.com/terms">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a>.</li>
+      <li>Only use Orion's moderation commands for legitimate server moderation purposes.</li>
+      <li>Not attempt to abuse, exploit, reverse-engineer, or interfere with Orion's operation.</li>
+    </ul>
 
-        <h1>Terms of Service</h1>
+    <h2>3. Availability</h2>
+    <p>
+      Orion is provided on an "as-is" and "as-available" basis. We do not guarantee
+      that Orion will be available at all times, free of bugs, or uninterrupted.
+      Features may be added, changed, or removed at any time without notice.
+    </p>
 
-        <p class="updated">
-          Last updated: September 3, 2026
-        </p>
+    <h2>4. No Warranty</h2>
+    <p>
+      Orion is provided without warranties of any kind, express or implied, including
+      but not limited to fitness for a particular purpose or non-infringement.
+      Use of Orion is at your own risk.
+    </p>
 
-      </div>
+    <h2>5. Limitation of Liability</h2>
+    <p>
+      To the fullest extent permitted by law, Orion's operator shall not be liable
+      for any indirect, incidental, or consequential damages arising from your use
+      of, or inability to use, Orion — including but not limited to loss of data,
+      moderation errors, or server disruption.
+    </p>
 
-      <p>
-        By adding or using Orion in your server, you agree to the following
-        Terms of Service.
-      </p>
+    <h2>6. Moderation Actions</h2>
+    <p>
+      Actions performed through Orion (kicks, bans, timeouts, warnings, role changes,
+      channel locks, etc.) are carried out based on commands issued by authorized
+      server staff. Orion's operator is not responsible for how server staff choose
+      to use these tools.
+    </p>
 
-      <h2>1. Description of Service</h2>
+    <h2>7. Termination of Access</h2>
+    <p>
+      We reserve the right to suspend or block Orion's access to any server, or to
+      disable specific features, at our discretion — including in cases of abuse,
+      excessive load, or violation of these Terms.
+    </p>
 
-      <p>
-        Orion provides moderation-related tools for Discord servers,
-        including but not limited to kicking, banning, timing out, and
-        warning members, managing roles, locking and unlocking channels,
-        and toggling slowmode.
-      </p>
+    <h2>8. Changes to Orion or These Terms</h2>
+    <p>
+      We may update Orion's features or these Terms of Service at any time.
+      Continued use of Orion after changes take effect constitutes your acceptance
+      of the revised Terms.
+    </p>
 
-      <h2>2. Acceptable Use</h2>
+    <h2>9. Contact</h2>
+    <p>
+      If you have questions about these Terms, please contact Orion's operator on Discord.
+    </p>
+  </article>
+</main>
 
-      <p>
-        You agree to:
-      </p>
-
-      <ul>
-        <li>
-          Use Orion in compliance with
-          <a href="https://discord.com/terms">Discord's Terms of Service</a>
-          and
-          <a href="https://discord.com/guidelines">Community Guidelines</a>.
-        </li>
-
-        <li>
-          Only use Orion's moderation commands for legitimate server
-          moderation purposes.
-        </li>
-
-        <li>
-          Not attempt to abuse, exploit, reverse-engineer, or interfere
-          with Orion's operation.
-        </li>
-      </ul>
-
-      <h2>3. Availability</h2>
-
-      <p>
-        Orion is provided on an "as-is" and "as-available" basis. We do not
-        guarantee that Orion will be available at all times, free of bugs,
-        or uninterrupted. Features may be added, changed, or removed at
-        any time without notice.
-      </p>
-
-      <h2>4. No Warranty</h2>
-
-      <p>
-        Orion is provided without warranties of any kind, express or implied,
-        including but not limited to fitness for a particular purpose or
-        non-infringement. Use of Orion is at your own risk.
-      </p>
-
-      <h2>5. Limitation of Liability</h2>
-
-      <p>
-        To the fullest extent permitted by law, Orion's operator shall not
-        be liable for any indirect, incidental, or consequential damages
-        arising from your use of, or inability to use, Orion — including
-        but not limited to loss of data, moderation errors, or server
-        disruption.
-      </p>
-
-      <h2>6. Moderation Actions</h2>
-
-      <p>
-        Actions performed through Orion, including kicks, bans, timeouts,
-        warnings, role changes, and channel locks, are carried out based
-        on commands issued by authorized server staff. Orion's operator is
-        not responsible for how server staff choose to use these tools.
-      </p>
-
-      <h2>7. Termination of Access</h2>
-
-      <p>
-        We reserve the right to suspend or block Orion's access to any
-        server, or to disable specific features, at our discretion —
-        including in cases of abuse, excessive load, or violation of
-        these Terms.
-      </p>
-
-      <h2>8. Changes to Orion or These Terms</h2>
-
-      <p>
-        We may update Orion's features or these Terms of Service at any
-        time. Continued use of Orion after changes take effect constitutes
-        your acceptance of the revised Terms.
-      </p>
-
-      <h2>9. Contact</h2>
-
-      <p>
-        If you have questions about these Terms, please contact Orion's
-        operator on Discord.
-      </p>
-
-      <div class="footer">
-        © 2026 Orion
-      </div>
-
-    </section>
-
-  </main>
+<footer class="footer">© 2026 Orion</footer>
 
 </body>
 </html>
