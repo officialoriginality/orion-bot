@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -12,9 +11,7 @@
     --blue: #4f7cff;
     --blue-light: #7ea2ff;
     --bg: #05070c;
-    --bg-secondary: #0a0e18;
     --card: #0d121d;
-    --card-hover: #111827;
     --border: #1b2638;
     --border-light: #26344d;
     --text: #f5f7fb;
@@ -24,10 +21,6 @@
 
   * {
     box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
   }
 
   body {
@@ -46,7 +39,7 @@
     background:
       radial-gradient(
         circle at 50% -10%,
-        rgba(79, 124, 255, 0.16),
+        rgba(79, 124, 255, 0.15),
         transparent 42%
       ),
       linear-gradient(
@@ -59,12 +52,12 @@
 
   .card {
     width: 100%;
-    max-width: 540px;
-    padding: 46px 38px;
+    max-width: 520px;
+    padding: 44px 36px;
 
     text-align: center;
 
-    background: rgba(13, 18, 29, 0.96);
+    background: rgba(13, 18, 29, 0.97);
     border: 1px solid var(--border);
     border-radius: 18px;
 
@@ -75,28 +68,17 @@
   .logo {
     width: 64px;
     height: 64px;
+
     margin: 0 auto 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+
+    object-fit: contain;
 
     border-radius: 16px;
 
-    background:
-      linear-gradient(
-        145deg,
-        #5d87ff,
-        #3e68d9
-      );
-
-    color: var(--white);
-
-    font-size: 1.7rem;
-    font-weight: 700;
-
     box-shadow:
-      0 10px 30px rgba(79, 124, 255, 0.18);
+      0 10px 28px rgba(79, 124, 255, 0.16);
   }
 
   h1 {
@@ -122,27 +104,24 @@
   }
 
   .links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 
-    min-height: 48px;
-    padding: 12px 18px;
+    padding: 14px 18px;
 
+    background: #0a101c;
     border: 1px solid var(--border-light);
     border-radius: 10px;
 
-    background: #0a101c;
+    color: #b9c7e8;
 
-    color: #dce5ff;
     font-size: 0.95rem;
     font-weight: 600;
-
     text-decoration: none;
 
     transition:
       background 0.2s ease,
       border-color 0.2s ease,
+      color 0.2s ease,
       transform 0.2s ease;
   }
 
@@ -150,11 +129,12 @@
     background: #111c32;
     border-color: #3b5fae;
     color: var(--white);
-    transform: translateY(-1px);
+
+    transform: translateY(-2px);
   }
 
   .footer {
-    margin-top: 28px;
+    margin-top: 26px;
 
     color: #5f6b7c;
     font-size: 0.82rem;
@@ -162,11 +142,11 @@
 
   @media (max-width: 600px) {
     body {
-      padding: 16px;
+      padding: 18px 12px;
     }
 
     .card {
-      padding: 38px 24px;
+      padding: 36px 22px;
       border-radius: 16px;
     }
 
@@ -175,14 +155,17 @@
     }
   }
 </style>
-
 </head>
 
 <body>
 
 <main class="card">
 
-  <div class="logo">O</div>
+  <img
+    src="./favicon.ico"
+    alt="Orion Logo"
+    class="logo"
+  >
 
   <h1>Orion</h1>
 
