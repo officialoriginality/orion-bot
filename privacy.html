@@ -1,417 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Orion — Privacy Policy</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Orion — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-:root {
-  --blue: #3155d9;
-  --blue-hover: #2748c5;
-  --blue-soft: #eef3ff;
-  --blue-border: #d5dff7;
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-  --background: #f3f6fd;
-  --background-top: #edf2ff;
+  <style>
+    :root {
+      --blue: #3156d9;
+      --blue-dark: #2445b8;
+      --blue-light: #4b6be3;
+      --blue-soft: #eef2ff;
 
-  --white: #ffffff;
-  --text: #101828;
-  --text-secondary: #52627a;
-  --border: #dbe3f2;
-}
+      --background: #f4f7ff;
+      --background-2: #eaf0ff;
 
-* {
-  box-sizing: border-box;
-}
+      --white: #ffffff;
+      --text: #101a35;
+      --text-light: #53617f;
+      --border: #d8e0f4;
+    }
 
-html {
-  scroll-behavior: smooth;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  color: var(--text);
+    html {
+      scroll-behavior: smooth;
+    }
 
-  background:
-    radial-gradient(
-      circle at 50% 0%,
-      #e4ebff 0%,
-      transparent 42%
-    ),
-    linear-gradient(
-      180deg,
-      var(--background-top) 0%,
-      var(--background) 100%
-    );
-}
+    body {
+      margin: 0;
 
-.site-header {
-  width: 100%;
-  border-bottom: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.92);
-}
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, sans-serif;
 
-.navigation {
-  width: 100%;
-  max-width: 1180px;
-  min-height: 70px;
-  margin: 0 auto;
-  padding: 0 28px;
+      line-height: 1.7;
+      color: var(--text);
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-}
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(49, 86, 217, 0.16),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at bottom right,
+          rgba(75, 107, 227, 0.12),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          var(--background) 0%,
+          var(--background-2) 100%
+        );
+    }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    .site-header {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--border);
+    }
 
-  color: var(--text);
-  font-size: 1.05rem;
-  font-weight: 700;
-  text-decoration: none;
-}
+    .navigation {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 28px;
 
-.brand img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
 
-.nav-links a {
-  padding: 9px 14px;
-  border-radius: 8px;
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
 
-  color: #40506b;
-  font-size: 0.92rem;
-  font-weight: 600;
-  text-decoration: none;
+    .brand img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
 
-  transition: 0.2s ease;
-}
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
 
-.nav-links a:hover {
-  color: var(--blue);
-  background: var(--blue-soft);
-}
+    .nav-links a {
+      padding: 9px 14px;
+      border-radius: 8px;
 
-.nav-links a.active {
-  background: var(--blue);
-  color: white;
-}
+      color: #405073;
+      font-size: 0.9rem;
+      font-weight: 650;
+      text-decoration: none;
 
-.page {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 32px 24px 70px;
-}
+      transition: 0.2s ease;
+    }
 
-.card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  padding: 52px 48px;
+    .nav-links a:hover {
+      color: var(--blue);
+      background: var(--blue-soft);
+    }
 
-  box-shadow:
-    0 18px 45px rgba(39, 65, 120, 0.08);
-}
+    .nav-links a.active {
+      color: var(--white);
+      background: var(--blue);
+    }
 
-.page-header {
-  text-align: center;
+    .page {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
 
-  padding-bottom: 34px;
-  margin-bottom: 38px;
+      padding: 32px 28px 70px;
+    }
 
-  border-bottom: 1px solid var(--border);
-}
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 22px;
 
-.logo {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto 20px;
+      padding: 58px 48px;
 
-  object-fit: contain;
-}
+      box-shadow:
+        0 24px 60px rgba(35, 62, 125, 0.10);
+    }
 
-h1 {
-  margin: 0 0 10px;
+    .top {
+      text-align: center;
 
-  color: var(--text);
-  font-size: 2.2rem;
-  font-weight: 750;
-  letter-spacing: -0.035em;
-}
+      padding-bottom: 34px;
+      margin-bottom: 36px;
 
-.updated {
-  margin: 0;
+      border-bottom: 1px solid var(--border);
+    }
 
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-}
+    .logo {
+      width: 82px;
+      height: 82px;
 
-h2 {
-  margin: 40px 0 14px;
+      margin: 0 auto 20px;
 
-  padding-bottom: 10px;
+      object-fit: contain;
+    }
 
-  color: var(--blue);
-  font-size: 1.25rem;
-  font-weight: 700;
+    h1 {
+      margin: 0 0 10px;
 
-  border-bottom: 1px solid var(--blue-border);
-}
+      color: var(--text);
+      font-size: 2.35rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+    }
 
-h2:first-of-type {
-  margin-top: 0;
-}
+    .updated {
+      margin: 0;
 
-p {
-  color: var(--text-secondary);
-}
+      color: var(--text-light);
+      font-size: 0.92rem;
+    }
 
-li {
-  margin-bottom: 10px;
-  color: var(--text-secondary);
-}
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 14px;
 
-strong {
-  color: var(--text);
-}
+      padding-bottom: 9px;
 
-.command {
-  color: var(--text);
-  font-weight: 700;
-}
+      color: var(--blue);
+      font-size: 1.25rem;
+      font-weight: 800;
 
-.footer {
-  text-align: center;
-  margin-top: 28px;
+      border-bottom: 1px solid var(--border);
+    }
 
-  color: #8290a8;
-  font-size: 0.82rem;
-}
+    h2:first-of-type {
+      margin-top: 0;
+    }
 
-@media (max-width: 700px) {
-  .navigation {
-    min-height: auto;
-    padding: 14px 18px;
-    flex-direction: column;
-    gap: 8px;
-  }
+    p {
+      color: var(--text-light);
+    }
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    li {
+      margin-bottom: 9px;
+      color: var(--text-light);
+    }
 
-  .page {
-    padding: 20px 12px 50px;
-  }
+    strong {
+      color: var(--text);
+    }
 
-  .card {
-    padding: 38px 24px;
-    border-radius: 18px;
-  }
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
 
-  h1 {
-    font-size: 1.8rem;
-  }
-}
-</style>
+    a:hover {
+      color: var(--blue-dark);
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 38px;
+
+      text-align: center;
+
+      color: #7180a0;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 700px) {
+      .navigation {
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .page {
+        padding: 20px 12px 50px;
+      }
+
+      .card {
+        padding: 40px 24px;
+        border-radius: 18px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header class="site-header">
-  <nav class="navigation">
+  <header class="site-header">
+    <nav class="navigation">
 
-    <a class="brand" href="./index.html">
-      <img src="./favicon.ico" alt="Orion">
-      <span>Orion</span>
-    </a>
+      <a class="brand" href="./index.html">
+        <img src="./orion.png" alt="Orion">
+        <span>Orion</span>
+      </a>
 
-    <div class="nav-links">
-      <a href="./index.html">← Back to Orion</a>
-      <a href="./documentation.html">Documentation</a>
-      <a href="./privacy.html" class="active">Privacy Policy</a>
-      <a href="./terms.html">Terms of Service</a>
-    </div>
+      <div class="nav-links">
+        <a href="./index.html">← Back to Orion</a>
+        <a href="./documentation.html">Documentation</a>
+        <a href="./privacy.html" class="active">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </div>
 
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<main class="page">
+  <main class="page">
 
-  <section class="card">
+    <section class="card">
 
-    <div class="page-header">
+      <div class="top">
 
-      <img
-        class="logo"
-        src="./favicon.ico"
-        alt="Orion logo"
-      >
+        <img
+          class="logo"
+          src="./orion.png"
+          alt="Orion logo"
+        >
 
-      <h1>Privacy Policy</h1>
+        <h1>Privacy Policy</h1>
 
-      <p class="updated">
-        Last updated: September 3, 2026
+        <p class="updated">
+          Last updated: September 3, 2026
+        </p>
+
+      </div>
+
+      <p>
+        This Privacy Policy explains what information Orion collects,
+        how it is used, and your rights regarding that information.
       </p>
 
-    </div>
+      <h2>1. Information We Collect</h2>
 
-    <p>
-      This Privacy Policy explains what information Orion collects,
-      how it is used, and your rights regarding that information.
-    </p>
+      <p>
+        When you use Orion in a server, it may collect and store the following:
+      </p>
 
-    <h2>1. Information We Collect</h2>
+      <ul>
+        <li>
+          <strong>Discord User IDs</strong> — to identify who a moderation
+          action was applied to and who applied it.
+        </li>
 
-    <p>
-      When you use Orion in a server, it may collect and store the following:
-    </p>
+        <li>
+          <strong>Warning records</strong> — the reason given for a warning
+          and the moderator who issued it, stored per server and per user,
+          so warning history can be reviewed later.
+        </li>
 
-    <ul>
-      <li>
-        <strong>Discord User IDs</strong> — to identify who a moderation
-        action was applied to and who applied it.
-      </li>
+        <li>
+          <strong>Server (Guild) IDs</strong> — to keep data separated
+          between different servers Orion is used in.
+        </li>
+      </ul>
 
-      <li>
-        <strong>Warning records</strong> — the reason given for a warning
-        and the moderator who issued it, stored per server and per user.
-      </li>
+      <p>
+        Orion does <strong>not</strong> permanently store the content of
+        your regular messages. It only reads message content as required
+        to process commands and does not log or retain chat messages.
+      </p>
 
-      <li>
-        <strong>Server (Guild) IDs</strong> — to keep data separated
-        between different servers Orion is used in.
-      </li>
-    </ul>
+      <h2>2. How We Use Information</h2>
 
-    <p>
-      Orion does <strong>not</strong> permanently store the content of
-      your regular messages. It only reads message content as required
-      to process commands such as <strong>?warn @user reason</strong>
-      and does not log or retain chat messages.
-    </p>
+      <p>
+        Collected information is used only to:
+      </p>
 
-    <h2>2. How We Use Information</h2>
+      <ul>
+        <li>
+          Carry out moderation actions requested by server staff.
+        </li>
 
-    <p>Collected information is used only to:</p>
+        <li>
+          Maintain a warning history so moderators can review a member's
+          past warnings.
+        </li>
 
-    <ul>
-      <li>
-        Carry out moderation actions requested by server staff.
-      </li>
+        <li>
+          Post moderation logs to a designated log channel within the same
+          server, if one is configured.
+        </li>
+      </ul>
 
-      <li>
-        Maintain a warning history so moderators can review a member's
-        past warnings.
-      </li>
+      <h2>3. Data Sharing</h2>
 
-      <li>
-        Post moderation logs to a designated log channel within the same
-        server, if one is configured.
-      </li>
-    </ul>
+      <p>
+        We do not sell, rent, or share your information with third parties.
+        Data collected by Orion is only accessible to:
+      </p>
 
-    <h2>3. Data Sharing</h2>
+      <ul>
+        <li>Orion's operator.</li>
 
-    <p>
-      We do not sell, rent, or share your information with third parties.
-      Data collected by Orion is only accessible to:
-    </p>
+        <li>
+          Server moderators/admins through Orion's commands.
+        </li>
+      </ul>
 
-    <ul>
-      <li>Orion's operator</li>
+      <h2>4. Data Storage &amp; Retention</h2>
 
-      <li>
-        Server moderators/admins through Orion's own commands.
-      </li>
-    </ul>
+      <p>
+        Warning data is stored in a local data file associated with Orion
+        and is retained until:
+      </p>
 
-    <h2>4. Data Storage &amp; Retention</h2>
+      <ul>
+        <li>
+          It is cleared by a server moderator using Orion's commands.
+        </li>
 
-    <p>
-      Warning data is stored in a local data file associated with Orion
-      and is retained until:
-    </p>
+        <li>
+          Orion is removed from the server.
+        </li>
 
-    <ul>
-      <li>
-        It is cleared by a server moderator using Orion's commands.
-      </li>
+        <li>
+          You request deletion.
+        </li>
+      </ul>
 
-      <li>
-        Orion is removed from the server.
-      </li>
+      <h2>5. Data Security</h2>
 
-      <li>
-        You request deletion.
-      </li>
-    </ul>
+      <p>
+        We take reasonable steps to protect stored data, including restricting
+        access to Orion's hosting environment and credentials. However, no
+        method of storage or transmission is 100% secure.
+      </p>
 
-    <h2>5. Data Security</h2>
+      <h2>6. Your Rights</h2>
 
-    <p>
-      We take reasonable steps to protect stored data, including restricting
-      access to Orion's hosting environment and credentials. However, no
-      method of storage or transmission is 100% secure.
-    </p>
+      <p>
+        You may request access to, or deletion of, any personal data associated
+        with you, such as warning records, by contacting Orion's operator
+        directly on Discord.
+      </p>
 
-    <h2>6. Your Rights</h2>
+      <h2>7. Children's Privacy</h2>
 
-    <p>
-      You may request access to, or deletion of, any personal data associated
-      with you, such as warning records, by contacting Orion's operator
-      directly on Discord.
-    </p>
+      <p>
+        Orion is not intended for use by anyone under the age required by
+        Discord's own Terms of Service. We do not knowingly collect data
+        from underage users beyond what Discord itself provides.
+      </p>
 
-    <h2>7. Children's Privacy</h2>
+      <h2>8. Changes to This Policy</h2>
 
-    <p>
-      Orion is not intended for use by anyone under the age required by
-      Discord's own Terms of Service. We do not knowingly collect data
-      from underage users beyond what Discord itself provides.
-    </p>
+      <p>
+        This Privacy Policy may be updated from time to time. Continued use
+        of Orion after changes are posted constitutes acceptance of the
+        updated policy.
+      </p>
 
-    <h2>8. Changes to This Policy</h2>
+      <h2>9. Contact</h2>
 
-    <p>
-      This Privacy Policy may be updated from time to time. Continued use
-      of Orion after changes are posted constitutes acceptance of the
-      updated policy.
-    </p>
+      <p>
+        If you have questions about this Privacy Policy, please contact
+        Orion's operator on Discord.
+      </p>
 
-    <h2>9. Contact</h2>
+      <div class="footer">
+        © 2026 Orion
+      </div>
 
-    <p>
-      If you have questions about this Privacy Policy, please contact
-      Orion's operator on Discord.
-    </p>
+    </section>
 
-    <div class="footer">
-      © 2026 Orion
-    </div>
-
-  </section>
-
-</main>
+  </main>
 
 </body>
 </html>
