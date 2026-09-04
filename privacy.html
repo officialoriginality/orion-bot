@@ -1,20 +1,206 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Privacy Policy — Orion</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 2rem; margin-bottom: 0.2em; }
-  h2 { font-size: 1.25rem; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
-  .updated { color: #666; margin-bottom: 2em; }
-  a { color: #0969da; }
+  :root {
+    --blue: #5865f2;
+    --blue-dark: #4752c4;
+    --blue-light: #7289da;
+    --bg: #080b14;
+    --bg-light: #0d1220;
+    --card: #111827;
+    --card-light: #151d2e;
+    --border: #202b44;
+    --text: #f1f5f9;
+    --muted: #9ca3af;
+    --white: #ffffff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 40px 20px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background:
+      radial-gradient(circle at top, rgba(88, 101, 242, 0.16), transparent 40%),
+      linear-gradient(135deg, #080b14 0%, #0b1020 50%, #070a12 100%);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: rgba(17, 24, 39, 0.94);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 48px 44px;
+    box-shadow:
+      0 20px 60px rgba(0, 0, 0, 0.45),
+      0 0 40px rgba(88, 101, 242, 0.06);
+  }
+
+  .top {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.3);
+  }
+
+  h1 {
+    margin: 0 0 8px;
+    font-size: 2.2rem;
+    color: var(--white);
+    letter-spacing: -0.02em;
+  }
+
+  .updated {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    margin-top: 2.4em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.45em;
+    border-bottom: 1px solid var(--border);
+    color: #8ea0ff;
+    font-size: 1.3rem;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    color: #cbd5e1;
+  }
+
+  li {
+    color: #cbd5e1;
+    margin-bottom: 8px;
+  }
+
+  strong {
+    color: var(--white);
+  }
+
+  code {
+    padding: 3px 7px;
+    border-radius: 6px;
+    background: #080d18;
+    border: 1px solid #1e293b;
+    color: #a5b4fc;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.9em;
+  }
+
+  a {
+    color: #8ea0ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+
+  .back {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 11px 17px;
+    border-radius: 9px;
+    background: #18213a;
+    border: 1px solid #273452;
+    color: #aab5ff;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  .back:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 24px;
+    color: #64748b;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 20px 12px 50px;
+    }
+
+    .card {
+      padding: 34px 24px;
+      border-radius: 16px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
 </style>
+
 </head>
+
 <body>
-<h1>Orion Privacy Policy</h1>
-<p class="updated">Last updated: September 3, 2026</p>
+
+<div class="container">
+
+  <main class="card">
+
+```
+<div class="top">
+  <div class="logo">O</div>
+  <h1>Orion Privacy Policy</h1>
+  <p class="updated">Last updated: September 3, 2026</p>
+</div>
 
 <p>This Privacy Policy explains what information Orion collects, how it is used, and your rights regarding that information.</p>
 
@@ -25,7 +211,8 @@
   <li><strong>Warning records</strong> — the reason given for a warning and the moderator who issued it, stored per server and per user, so warning history can be reviewed later.</li>
   <li><strong>Server (Guild) IDs</strong> — to keep data separated between different servers Orion is used in.</li>
 </ul>
-<p>Orion does <strong>not</strong> permanently store the content of your regular messages. It only reads message content as required to process commands (e.g. reading <code>?warn @user reason</code>) and does not log or retain chat messages.</p>
+
+<p>Orion does <strong>not</strong> permanently store the content of your regular messages. It only reads message content as required to process commands (e.g. <code>?warn @user reason</code>) and does not log or retain chat messages.</p>
 
 <h2>2. How We Use Information</h2>
 <p>Collected information is used only to:</p>
@@ -64,6 +251,17 @@
 
 <h2>9. Contact</h2>
 <p>If you have questions about this Privacy Policy, please contact Orion's operator on Discord.</p>
+
+<a class="back" href="./index.html">← Back to Orion</a>
+```
+
+  </main>
+
+  <div class="footer">
+    © 2026 Orion
+  </div>
+
+</div>
 
 </body>
 </html>
