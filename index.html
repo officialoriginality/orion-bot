@@ -363,7 +363,7 @@ a:hover {
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="./index.html">
-      <img src="./orion-icon.png" alt="Orion">
+      <img class="orion-logo" src="./orion.png" alt="Orion">
       <span>Orion</span>
     </a>
 
@@ -378,7 +378,7 @@ a:hover {
 <main class="home-page">
   <section class="card home-card">
     <div class="hero">
-      <img class="hero-logo" src="./orion-icon.png" alt="Orion logo">
+      <img class="hero-logo orion-logo" src="./orion.png" alt="Orion logo">
       <h1>Orion</h1>
       <p class="subtitle">Moderation tools for your Discord server.</p>
     </div>
@@ -401,5 +401,33 @@ a:hover {
     <div class="home-footer">© 2026 Orion</div>
   </section>
 </main>
+
+<script>
+  // The logo file can be named differently in the GitHub repository.
+  // Try the common Orion logo filenames until one loads.
+  const orionLogoFiles = [
+    "./orion.png",
+    "./orion-logo.png",
+    "./orion-icon.png",
+    "./logo.png",
+    "./icon.png",
+    "./favicon.png",
+    "./favicon.ico"
+  ];
+
+  document.querySelectorAll(".orion-logo").forEach((img) => {
+    let index = 0;
+
+    const tryNextLogo = () => {
+      index += 1;
+      if (index < orionLogoFiles.length) {
+        img.src = orionLogoFiles[index];
+      }
+    };
+
+    img.addEventListener("error", tryNextLogo);
+  });
+</script>
+
 </body>
 </html>
