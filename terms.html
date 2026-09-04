@@ -5,19 +5,20 @@
 <meta charset="UTF-8">
 <title>Orion — Terms of Service</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  
 <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  
+
 <style>
   :root {
-    --blue: #5865f2;
-    --blue-dark: #4752c4;
-    --bg: #080b14;
-    --card: #111827;
-    --border: #202b44;
-    --text: #f1f5f9;
-    --muted: #9ca3af;
+    --blue: #4f7cff;
+    --blue-light: #7ea2ff;
+    --bg: #05070c;
+    --card: #0d121d;
+    --border: #1b2638;
+    --border-light: #26344d;
+    --text: #f5f7fb;
+    --muted: #8d99aa;
     --white: #ffffff;
+    --body-text: #c2cad7;
   }
 
   * {
@@ -30,74 +31,168 @@
 
   body {
     margin: 0;
-    padding: 40px 20px 80px;
+    padding: 36px 20px 70px;
+
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
       Helvetica, Arial, sans-serif;
+
     line-height: 1.7;
     color: var(--text);
+
     background:
-      radial-gradient(circle at top, rgba(88, 101, 242, 0.16), transparent 40%),
-      linear-gradient(135deg, #080b14 0%, #0b1020 50%, #070a12 100%);
+      radial-gradient(
+        circle at 50% -10%,
+        rgba(79, 124, 255, 0.15),
+        transparent 42%
+      ),
+      linear-gradient(
+        145deg,
+        #05070c 0%,
+        #080c14 50%,
+        #05070c 100%
+      );
   }
 
   .container {
     width: 100%;
-    max-width: 820px;
+    max-width: 900px;
     margin: 0 auto;
   }
 
   .card {
-    background: rgba(17, 24, 39, 0.94);
+    padding: 42px 46px;
+
+    background: rgba(13, 18, 29, 0.97);
     border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 48px 44px;
+    border-radius: 18px;
+
     box-shadow:
-      0 20px 60px rgba(0, 0, 0, 0.45),
-      0 0 40px rgba(88, 101, 242, 0.06);
+      0 24px 70px rgba(0, 0, 0, 0.45);
   }
 
   .top {
     text-align: center;
-    padding-bottom: 30px;
-    margin-bottom: 32px;
+    padding-bottom: 28px;
+    margin-bottom: 20px;
+
     border-bottom: 1px solid var(--border);
   }
 
   .logo {
-    width: 58px;
-    height: 58px;
-    margin: 0 auto 18px;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 16px;
-    background: var(--blue);
-    color: white;
-    font-size: 1.5rem;
+
+    border-radius: 14px;
+
+    background:
+      linear-gradient(
+        145deg,
+        #5d87ff,
+        #3e68d9
+      );
+
+    color: var(--white);
+
+    font-size: 1.45rem;
     font-weight: 700;
-    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.3);
+
+    box-shadow:
+      0 10px 28px rgba(79, 124, 255, 0.16);
   }
 
   h1 {
-    margin: 0 0 8px;
-    font-size: 2.2rem;
+    margin: 0 0 7px;
+
     color: var(--white);
-    letter-spacing: -0.02em;
+    font-size: 2.15rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
   }
 
   .updated {
     margin: 0;
+
     color: var(--muted);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 34px;
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  .navigation a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 14px;
+
+    border: 1px solid var(--border-light);
+    border-radius: 9px;
+
+    background: #0a101c;
+
+    color: #b9c7e8;
+
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .navigation a:hover {
+    background: #111c32;
+    border-color: #3b5fae;
+    color: var(--white);
+    transform: translateY(-1px);
+  }
+
+  .navigation a.active {
+    background:
+      linear-gradient(
+        145deg,
+        #4f7cff,
+        #4269d7
+      );
+
+    border-color: #5f88ff;
+    color: var(--white);
+
+    box-shadow:
+      0 6px 18px rgba(79, 124, 255, 0.16);
   }
 
   h2 {
-    margin-top: 2.4em;
+    margin-top: 2.3em;
     margin-bottom: 0.8em;
     padding-bottom: 0.45em;
+
     border-bottom: 1px solid var(--border);
-    color: #8ea0ff;
-    font-size: 1.3rem;
+
+    color: var(--blue-light);
+    font-size: 1.25rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
   }
 
   h2:first-of-type {
@@ -105,12 +200,12 @@
   }
 
   p {
-    color: #cbd5e1;
+    color: var(--body-text);
   }
 
   li {
-    color: #cbd5e1;
     margin-bottom: 8px;
+    color: var(--body-text);
   }
 
   strong {
@@ -118,60 +213,49 @@
   }
 
   a {
-    color: #8ea0ff;
+    color: var(--blue-light);
     font-weight: 600;
     text-decoration: none;
-    transition: 0.2s ease;
   }
 
   a:hover {
-    color: var(--blue);
+    color: var(--white);
     text-decoration: underline;
-  }
-
-  .back {
-    display: inline-block;
-    margin-top: 36px;
-    padding: 11px 17px;
-    border-radius: 9px;
-    background: #18213a;
-    border: 1px solid #273452;
-    color: #aab5ff;
-    text-decoration: none;
-    transition: 0.2s ease;
-  }
-
-  .back:hover {
-    background: var(--blue);
-    border-color: var(--blue);
-    color: white;
-    text-decoration: none;
-    transform: translateY(-1px);
   }
 
   .footer {
     text-align: center;
     margin-top: 24px;
-    color: #64748b;
-    font-size: 0.85rem;
+
+    color: #5f6b7c;
+    font-size: 0.82rem;
   }
 
   @media (max-width: 600px) {
     body {
-      padding: 20px 12px 50px;
+      padding: 18px 12px 50px;
     }
 
     .card {
-      padding: 34px 24px;
+      padding: 32px 22px;
       border-radius: 16px;
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.75rem;
     }
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
+    }
+
+    .navigation {
+      gap: 7px;
+    }
+
+    .navigation a {
+      padding: 8px 11px;
+      font-size: 0.82rem;
     }
   }
 </style>
@@ -184,51 +268,123 @@
 
   <main class="card">
 
+```
 <div class="top">
   <div class="logo">O</div>
+
   <h1>Orion Terms of Service</h1>
-  <p class="updated">Last updated: September 3, 2026</p>
+
+  <p class="updated">
+    Last updated: September 3, 2026
+  </p>
 </div>
 
 <nav class="navigation">
   <a href="./index.html">← Back to Orion</a>
+  <a href="./documentation.html">Documentation</a>
   <a href="./privacy.html">Privacy Policy</a>
-  <a href="./terms.html">Terms of Service</a>
+  <a href="./terms.html" class="active">Terms of Service</a>
 </nav>
 
-<p>By adding or using Orion in your server, you agree to the following Terms of Service.</p>
+<p>
+  By adding or using Orion in your server, you agree to the following
+  Terms of Service.
+</p>
 
 <h2>1. Description of Service</h2>
-<p>Orion provides moderation-related tools for Discord servers, including but not limited to kicking, banning, timing out, and warning members, managing roles, locking/unlocking channels, and toggling slowmode.</p>
+
+<p>
+  Orion provides moderation-related tools for Discord servers,
+  including but not limited to kicking, banning, timing out, and
+  warning members, managing roles, locking/unlocking channels,
+  and toggling slowmode.
+</p>
 
 <h2>2. Acceptable Use</h2>
-<p>You agree to:</p>
+
+<p>
+  You agree to:
+</p>
+
 <ul>
-  <li>Use Orion in compliance with <a href="https://discord.com/terms">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a></li>
-  <li>Only use Orion's moderation commands for legitimate server moderation purposes</li>
-  <li>Not attempt to abuse, exploit, reverse-engineer, or interfere with Orion's operation</li>
+  <li>
+    Use Orion in compliance with
+    <a href="https://discord.com/terms">Discord's Terms of Service</a>
+    and
+    <a href="https://discord.com/guidelines">Community Guidelines</a>.
+  </li>
+
+  <li>
+    Only use Orion's moderation commands for legitimate server
+    moderation purposes.
+  </li>
+
+  <li>
+    Not attempt to abuse, exploit, reverse-engineer, or interfere
+    with Orion's operation.
+  </li>
 </ul>
 
 <h2>3. Availability</h2>
-<p>Orion is provided on an "as-is" and "as-available" basis. We do not guarantee that Orion will be available at all times, free of bugs, or uninterrupted. Features may be added, changed, or removed at any time without notice.</p>
+
+<p>
+  Orion is provided on an "as-is" and "as-available" basis.
+  We do not guarantee that Orion will be available at all times,
+  free of bugs, or uninterrupted. Features may be added, changed,
+  or removed at any time without notice.
+</p>
 
 <h2>4. No Warranty</h2>
-<p>Orion is provided without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose or non-infringement. Use of Orion is at your own risk.</p>
+
+<p>
+  Orion is provided without warranties of any kind, express or
+  implied, including but not limited to fitness for a particular
+  purpose or non-infringement. Use of Orion is at your own risk.
+</p>
 
 <h2>5. Limitation of Liability</h2>
-<p>To the fullest extent permitted by law, Orion's operator shall not be liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, Orion — including but not limited to loss of data, moderation errors, or server disruption.</p>
+
+<p>
+  To the fullest extent permitted by law, Orion's operator shall
+  not be liable for any indirect, incidental, or consequential
+  damages arising from your use of, or inability to use, Orion —
+  including but not limited to loss of data, moderation errors,
+  or server disruption.
+</p>
 
 <h2>6. Moderation Actions</h2>
-<p>Actions performed through Orion (kicks, bans, timeouts, warnings, role changes, channel locks, etc.) are carried out based on commands issued by authorized server staff. Orion's operator is not responsible for how server staff choose to use these tools.</p>
+
+<p>
+  Actions performed through Orion (kicks, bans, timeouts, warnings,
+  role changes, channel locks, etc.) are carried out based on
+  commands issued by authorized server staff. Orion's operator is
+  not responsible for how server staff choose to use these tools.
+</p>
 
 <h2>7. Termination of Access</h2>
-<p>We reserve the right to suspend or block Orion's access to any server, or to disable specific features, at our discretion — including in cases of abuse, excessive load, or violation of these Terms.</p>
+
+<p>
+  We reserve the right to suspend or block Orion's access to any
+  server, or to disable specific features, at our discretion —
+  including in cases of abuse, excessive load, or violation of
+  these Terms.
+</p>
 
 <h2>8. Changes to Orion or These Terms</h2>
-<p>We may update Orion's features or these Terms of Service at any time. Continued use of Orion after changes take effect constitutes your acceptance of the revised Terms.</p>
+
+<p>
+  We may update Orion's features or these Terms of Service at any
+  time. Continued use of Orion after changes take effect constitutes
+  your acceptance of the revised Terms.
+</p>
 
 <h2>9. Contact</h2>
-<p>If you have questions about these Terms, please contact Orion's operator on Discord.</p>
+
+<p>
+  If you have questions about these Terms, please contact Orion's
+  operator on Discord.
+</p>
+```
 
   </main>
 
