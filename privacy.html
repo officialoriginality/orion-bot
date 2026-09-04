@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -72,6 +71,7 @@
 
   .top {
     text-align: center;
+
     padding-bottom: 28px;
     margin-bottom: 20px;
 
@@ -79,27 +79,16 @@
   }
 
   .logo {
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 58px;
+
     margin: 0 auto 16px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+
+    object-fit: contain;
 
     border-radius: 14px;
-
-    background:
-      linear-gradient(
-        145deg,
-        #5d87ff,
-        #3e68d9
-      );
-
-    color: var(--white);
-
-    font-size: 1.45rem;
-    font-weight: 700;
 
     box-shadow:
       0 10px 28px rgba(79, 124, 255, 0.16);
@@ -118,7 +107,7 @@
     margin: 0;
 
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 0.92rem;
   }
 
   .navigation {
@@ -141,16 +130,14 @@
 
     padding: 9px 14px;
 
+    background: #0a101c;
     border: 1px solid var(--border-light);
     border-radius: 9px;
-
-    background: #0a101c;
 
     color: #b9c7e8;
 
     font-size: 0.88rem;
     font-weight: 600;
-
     text-decoration: none;
 
     transition:
@@ -164,22 +151,19 @@
     background: #111c32;
     border-color: #3b5fae;
     color: var(--white);
+
     transform: translateY(-1px);
   }
 
   .navigation a.active {
-    background:
-      linear-gradient(
-        145deg,
-        #4f7cff,
-        #4269d7
-      );
+    background: linear-gradient(
+      145deg,
+      #4f7cff,
+      #4269d7
+    );
 
     border-color: #5f88ff;
     color: var(--white);
-
-    box-shadow:
-      0 6px 18px rgba(79, 124, 255, 0.16);
   }
 
   h2 {
@@ -191,8 +175,6 @@
 
     color: var(--blue-light);
     font-size: 1.25rem;
-    font-weight: 650;
-    letter-spacing: -0.01em;
   }
 
   h2:first-of-type {
@@ -215,10 +197,9 @@
   code {
     padding: 2px 6px;
 
+    background: #070b13;
     border: 1px solid #1d2a40;
     border-radius: 5px;
-
-    background: #070b13;
 
     color: #9eb6ff;
 
@@ -244,6 +225,7 @@
 
   .footer {
     text-align: center;
+
     margin-top: 24px;
 
     color: #5f6b7c;
@@ -278,7 +260,6 @@
     }
   }
 </style>
-
 </head>
 
 <body>
@@ -287,161 +268,163 @@
 
   <main class="card">
 
-```
-<div class="top">
-  <div class="logo">O</div>
+    <div class="top">
+      <img
+        src="./favicon.ico"
+        alt="Orion Logo"
+        class="logo"
+      >
 
-  <h1>Orion Privacy Policy</h1>
+      <h1>Privacy Policy</h1>
 
-  <p class="updated">
-    Last updated: September 3, 2026
-  </p>
-</div>
+      <p class="updated">
+        Last updated: September 3, 2026
+      </p>
+    </div>
 
-<nav class="navigation">
-  <a href="./index.html">← Back to Orion</a>
-  <a href="./documentation.html">Documentation</a>
-  <a href="./privacy.html" class="active">Privacy Policy</a>
-  <a href="./terms.html">Terms of Service</a>
-</nav>
+    <nav class="navigation">
+      <a href="./index.html">← Back to Orion</a>
+      <a href="./documentation.html">Documentation</a>
+      <a href="./privacy.html" class="active">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+    </nav>
 
-<p>
-  This Privacy Policy explains what information Orion collects,
-  how it is used, and your rights regarding that information.
-</p>
+    <p>
+      This Privacy Policy explains what information Orion collects,
+      how it is used, and your rights regarding that information.
+    </p>
 
-<h2>1. Information We Collect</h2>
+    <h2>1. Information We Collect</h2>
 
-<p>
-  When you use Orion in a server, it may collect and store the following:
-</p>
+    <p>
+      When you use Orion in a server, it may collect and store the following:
+    </p>
 
-<ul>
-  <li>
-    <strong>Discord User IDs</strong> — to identify who a moderation
-    action (kick, ban, timeout, warning, role change, etc.) was applied
-    to and who applied it.
-  </li>
+    <ul>
+      <li>
+        <strong>Discord User IDs</strong> — to identify who a moderation
+        action (kick, ban, timeout, warning, role change, etc.) was applied
+        to and who applied it.
+      </li>
 
-  <li>
-    <strong>Warning records</strong> — the reason given for a warning
-    and the moderator who issued it, stored per server and per user,
-    so warning history can be reviewed later.
-  </li>
+      <li>
+        <strong>Warning records</strong> — the reason given for a warning
+        and the moderator who issued it, stored per server and per user,
+        so warning history can be reviewed later.
+      </li>
 
-  <li>
-    <strong>Server (Guild) IDs</strong> — to keep data separated
-    between different servers Orion is used in.
-  </li>
-</ul>
+      <li>
+        <strong>Server (Guild) IDs</strong> — to keep data separated
+        between different servers Orion is used in.
+      </li>
+    </ul>
 
-<p>
-  Orion does <strong>not</strong> permanently store the content of
-  your regular messages. It only reads message content as required
-  to process commands (e.g. <code>?warn @user reason</code>) and
-  does not log or retain chat messages.
-</p>
+    <p>
+      Orion does <strong>not</strong> permanently store the content of
+      your regular messages. It only reads message content as required
+      to process commands (e.g. <code>?warn @user reason</code>) and
+      does not log or retain chat messages.
+    </p>
 
-<h2>2. How We Use Information</h2>
+    <h2>2. How We Use Information</h2>
 
-<p>
-  Collected information is used only to:
-</p>
+    <p>
+      Collected information is used only to:
+    </p>
 
-<ul>
-  <li>
-    Carry out moderation actions requested by server staff
-    (kicks, bans, timeouts, warnings, role toggles, channel locks, etc.)
-  </li>
+    <ul>
+      <li>
+        Carry out moderation actions requested by server staff
+        (kicks, bans, timeouts, warnings, role toggles, channel locks, etc.)
+      </li>
 
-  <li>
-    Maintain a warning history so moderators can review a member's
-    past warnings.
-  </li>
+      <li>
+        Maintain a warning history so moderators can review a member's
+        past warnings.
+      </li>
 
-  <li>
-    Post moderation logs to a designated log channel within the same
-    server, if one is configured.
-  </li>
-</ul>
+      <li>
+        Post moderation logs to a designated log channel within the same
+        server, if one is configured.
+      </li>
+    </ul>
 
-<h2>3. Data Sharing</h2>
+    <h2>3. Data Sharing</h2>
 
-<p>
-  We do not sell, rent, or share your information with third parties.
-  Data collected by Orion is only accessible to:
-</p>
+    <p>
+      We do not sell, rent, or share your information with third parties.
+      Data collected by Orion is only accessible to:
+    </p>
 
-<ul>
-  <li>Orion's operator.</li>
+    <ul>
+      <li>Orion's operator.</li>
 
-  <li>
-    Server moderators/admins, through Orion's own commands
-    (e.g. <code>?warnings @member</code>).
-  </li>
-</ul>
+      <li>
+        Server moderators/admins, through Orion's own commands
+        (e.g. <code>?warnings @member</code>).
+      </li>
+    </ul>
 
-<h2>4. Data Storage &amp; Retention</h2>
+    <h2>4. Data Storage &amp; Retention</h2>
 
-<p>
-  Warning data is stored in a local data file associated with Orion
-  and is retained until:
-</p>
+    <p>
+      Warning data is stored in a local data file associated with Orion
+      and is retained until:
+    </p>
 
-<ul>
-  <li>
-    It is cleared by a server moderator using Orion's commands
-    (e.g. <code>?clearwarnings</code>), or
-  </li>
+    <ul>
+      <li>
+        It is cleared by a server moderator using Orion's commands
+        (e.g. <code>?clearwarnings</code>), or
+      </li>
 
-  <li>
-    Orion is removed from the server, or
-  </li>
+      <li>
+        Orion is removed from the server, or
+      </li>
 
-  <li>
-    You request deletion (see Section 6).
-  </li>
-</ul>
+      <li>
+        You request deletion (see Section 6).
+      </li>
+    </ul>
 
-<h2>5. Data Security</h2>
+    <h2>5. Data Security</h2>
 
-<p>
-  We take reasonable steps to protect stored data, including restricting
-  access to Orion's hosting environment and credentials. However, no
-  method of storage or transmission is 100% secure.
-</p>
+    <p>
+      We take reasonable steps to protect stored data, including restricting
+      access to Orion's hosting environment and credentials. However, no
+      method of storage or transmission is 100% secure.
+    </p>
 
-<h2>6. Your Rights</h2>
+    <h2>6. Your Rights</h2>
 
-<p>
-  You may request access to, or deletion of, any personal data associated
-  with you (such as warning records) by contacting Orion's operator
-  directly on Discord.
-</p>
+    <p>
+      You may request access to, or deletion of, any personal data associated
+      with you (such as warning records) by contacting Orion's operator
+      directly on Discord.
+    </p>
 
-<h2>7. Children's Privacy</h2>
+    <h2>7. Children's Privacy</h2>
 
-<p>
-  Orion is not intended for use by anyone under the age required by
-  Discord's own Terms of Service. We do not knowingly collect data
-  from underage users beyond what Discord itself provides.
-</p>
+    <p>
+      Orion is not intended for use by anyone under the age required by
+      Discord's own Terms of Service. We do not knowingly collect data
+      from underage users beyond what Discord itself provides.
+    </p>
 
-<h2>8. Changes to This Policy</h2>
+    <h2>8. Changes to This Policy</h2>
 
-<p>
-  This Privacy Policy may be updated from time to time. Continued use
-  of Orion after changes are posted constitutes acceptance of the
-  updated policy.
-</p>
+    <p>
+      This Privacy Policy may be updated from time to time. Continued use
+      of Orion after changes are posted constitutes acceptance of the
+      updated policy.
+    </p>
 
-<h2>9. Contact</h2>
+    <h2>9. Contact</h2>
 
-<p>
-  If you have questions about this Privacy Policy, please contact
-  Orion's operator on Discord.
-</p>
-```
+    <p>
+      If you have questions about this Privacy Policy, please contact
+      Orion's operator on Discord.
+    </p>
 
   </main>
 
