@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -72,6 +71,7 @@
 
   .top {
     text-align: center;
+
     padding-bottom: 28px;
     margin-bottom: 20px;
 
@@ -79,27 +79,16 @@
   }
 
   .logo {
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 58px;
+
     margin: 0 auto 16px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+
+    object-fit: contain;
 
     border-radius: 14px;
-
-    background:
-      linear-gradient(
-        145deg,
-        #5d87ff,
-        #3e68d9
-      );
-
-    color: var(--white);
-
-    font-size: 1.45rem;
-    font-weight: 700;
 
     box-shadow:
       0 10px 28px rgba(79, 124, 255, 0.16);
@@ -118,7 +107,7 @@
     margin: 0;
 
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 0.92rem;
   }
 
   .navigation {
@@ -141,16 +130,14 @@
 
     padding: 9px 14px;
 
+    background: #0a101c;
     border: 1px solid var(--border-light);
     border-radius: 9px;
-
-    background: #0a101c;
 
     color: #b9c7e8;
 
     font-size: 0.88rem;
     font-weight: 600;
-
     text-decoration: none;
 
     transition:
@@ -164,22 +151,19 @@
     background: #111c32;
     border-color: #3b5fae;
     color: var(--white);
+
     transform: translateY(-1px);
   }
 
   .navigation a.active {
-    background:
-      linear-gradient(
-        145deg,
-        #4f7cff,
-        #4269d7
-      );
+    background: linear-gradient(
+      145deg,
+      #4f7cff,
+      #4269d7
+    );
 
     border-color: #5f88ff;
     color: var(--white);
-
-    box-shadow:
-      0 6px 18px rgba(79, 124, 255, 0.16);
   }
 
   h2 {
@@ -191,8 +175,6 @@
 
     color: var(--blue-light);
     font-size: 1.25rem;
-    font-weight: 650;
-    letter-spacing: -0.01em;
   }
 
   h2:first-of-type {
@@ -225,6 +207,7 @@
 
   .footer {
     text-align: center;
+
     margin-top: 24px;
 
     color: #5f6b7c;
@@ -259,7 +242,6 @@
     }
   }
 </style>
-
 </head>
 
 <body>
@@ -268,123 +250,124 @@
 
   <main class="card">
 
-```
-<div class="top">
-  <div class="logo">O</div>
+    <div class="top">
+      <img
+        src="./favicon.ico"
+        alt="Orion Logo"
+        class="logo"
+      >
 
-  <h1>Orion Terms of Service</h1>
+      <h1>Terms of Service</h1>
 
-  <p class="updated">
-    Last updated: September 3, 2026
-  </p>
-</div>
+      <p class="updated">
+        Last updated: September 3, 2026
+      </p>
+    </div>
 
-<nav class="navigation">
-  <a href="./index.html">← Back to Orion</a>
-  <a href="./documentation.html">Documentation</a>
-  <a href="./privacy.html">Privacy Policy</a>
-  <a href="./terms.html" class="active">Terms of Service</a>
-</nav>
+    <nav class="navigation">
+      <a href="./index.html">← Back to Orion</a>
+      <a href="./documentation.html">Documentation</a>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html" class="active">Terms of Service</a>
+    </nav>
 
-<p>
-  By adding or using Orion in your server, you agree to the following
-  Terms of Service.
-</p>
+    <p>
+      By adding or using Orion in your server, you agree to the following
+      Terms of Service.
+    </p>
 
-<h2>1. Description of Service</h2>
+    <h2>1. Description of Service</h2>
 
-<p>
-  Orion provides moderation-related tools for Discord servers,
-  including but not limited to kicking, banning, timing out, and
-  warning members, managing roles, locking/unlocking channels,
-  and toggling slowmode.
-</p>
+    <p>
+      Orion provides moderation-related tools for Discord servers,
+      including but not limited to kicking, banning, timing out,
+      and warning members, managing roles, locking/unlocking channels,
+      and toggling slowmode.
+    </p>
 
-<h2>2. Acceptable Use</h2>
+    <h2>2. Acceptable Use</h2>
 
-<p>
-  You agree to:
-</p>
+    <p>
+      You agree to:
+    </p>
 
-<ul>
-  <li>
-    Use Orion in compliance with
-    <a href="https://discord.com/terms">Discord's Terms of Service</a>
-    and
-    <a href="https://discord.com/guidelines">Community Guidelines</a>.
-  </li>
+    <ul>
+      <li>
+        Use Orion in compliance with
+        <a href="https://discord.com/terms">Discord's Terms of Service</a>
+        and
+        <a href="https://discord.com/guidelines">Community Guidelines</a>.
+      </li>
 
-  <li>
-    Only use Orion's moderation commands for legitimate server
-    moderation purposes.
-  </li>
+      <li>
+        Only use Orion's moderation commands for legitimate server
+        moderation purposes.
+      </li>
 
-  <li>
-    Not attempt to abuse, exploit, reverse-engineer, or interfere
-    with Orion's operation.
-  </li>
-</ul>
+      <li>
+        Not attempt to abuse, exploit, reverse-engineer, or interfere
+        with Orion's operation.
+      </li>
+    </ul>
 
-<h2>3. Availability</h2>
+    <h2>3. Availability</h2>
 
-<p>
-  Orion is provided on an "as-is" and "as-available" basis.
-  We do not guarantee that Orion will be available at all times,
-  free of bugs, or uninterrupted. Features may be added, changed,
-  or removed at any time without notice.
-</p>
+    <p>
+      Orion is provided on an "as-is" and "as-available" basis.
+      We do not guarantee that Orion will be available at all times,
+      free of bugs, or uninterrupted. Features may be added, changed,
+      or removed at any time without notice.
+    </p>
 
-<h2>4. No Warranty</h2>
+    <h2>4. No Warranty</h2>
 
-<p>
-  Orion is provided without warranties of any kind, express or
-  implied, including but not limited to fitness for a particular
-  purpose or non-infringement. Use of Orion is at your own risk.
-</p>
+    <p>
+      Orion is provided without warranties of any kind, express or implied,
+      including but not limited to fitness for a particular purpose or
+      non-infringement. Use of Orion is at your own risk.
+    </p>
 
-<h2>5. Limitation of Liability</h2>
+    <h2>5. Limitation of Liability</h2>
 
-<p>
-  To the fullest extent permitted by law, Orion's operator shall
-  not be liable for any indirect, incidental, or consequential
-  damages arising from your use of, or inability to use, Orion —
-  including but not limited to loss of data, moderation errors,
-  or server disruption.
-</p>
+    <p>
+      To the fullest extent permitted by law, Orion's operator shall not
+      be liable for any indirect, incidental, or consequential damages
+      arising from your use of, or inability to use, Orion — including
+      but not limited to loss of data, moderation errors, or server
+      disruption.
+    </p>
 
-<h2>6. Moderation Actions</h2>
+    <h2>6. Moderation Actions</h2>
 
-<p>
-  Actions performed through Orion (kicks, bans, timeouts, warnings,
-  role changes, channel locks, etc.) are carried out based on
-  commands issued by authorized server staff. Orion's operator is
-  not responsible for how server staff choose to use these tools.
-</p>
+    <p>
+      Actions performed through Orion (kicks, bans, timeouts, warnings,
+      role changes, channel locks, etc.) are carried out based on commands
+      issued by authorized server staff. Orion's operator is not responsible
+      for how server staff choose to use these tools.
+    </p>
 
-<h2>7. Termination of Access</h2>
+    <h2>7. Termination of Access</h2>
 
-<p>
-  We reserve the right to suspend or block Orion's access to any
-  server, or to disable specific features, at our discretion —
-  including in cases of abuse, excessive load, or violation of
-  these Terms.
-</p>
+    <p>
+      We reserve the right to suspend or block Orion's access to any server,
+      or to disable specific features, at our discretion — including in
+      cases of abuse, excessive load, or violation of these Terms.
+    </p>
 
-<h2>8. Changes to Orion or These Terms</h2>
+    <h2>8. Changes to Orion or These Terms</h2>
 
-<p>
-  We may update Orion's features or these Terms of Service at any
-  time. Continued use of Orion after changes take effect constitutes
-  your acceptance of the revised Terms.
-</p>
+    <p>
+      We may update Orion's features or these Terms of Service at any time.
+      Continued use of Orion after changes take effect constitutes your
+      acceptance of the revised Terms.
+    </p>
 
-<h2>9. Contact</h2>
+    <h2>9. Contact</h2>
 
-<p>
-  If you have questions about these Terms, please contact Orion's
-  operator on Discord.
-</p>
-```
+    <p>
+      If you have questions about these Terms, please contact Orion's
+      operator on Discord.
+    </p>
 
   </main>
 
